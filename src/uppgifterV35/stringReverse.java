@@ -1,15 +1,28 @@
 package uppgifterV35;
 
 public class stringReverse {
-
-	public static void main(String[] args) {
-
-        String str = new String("a, b, c, d, e, f, g, h, i, j");
-
-        for (int i = str.length() - 1; i >= 0; i--) {
-            str = str + str.charAt(i);
-        }
-        
-        System.out.println(str);
-    }	
-}
+	
+			 String reverse = "hej, och, hejdå";
+	
+			 public String reverseString(String str) {
+	
+			 if (str.length() == 1) {
+				 return str;
+			 }
+			 
+			 else {
+				 reverse += str.charAt(str.length()-1)
+		
+				 +reverseString(str.substring(0,str.length()-1));
+		
+				 return reverse;	
+			 	}	
+			 }
+	
+			 public static void main(String a[]) {
+	
+				 stringReverse srr = new stringReverse();
+		
+				 System.out.println(srr.reverseString(""));
+			 }
+		}
