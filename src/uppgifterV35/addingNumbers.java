@@ -6,7 +6,7 @@ public class addingNumbers {
 		int sum = 0;
 	
 		for (int number : numbers)
-			sum = sum+number;
+			sum = sum + number;
 		return sum;
 	}
 }
