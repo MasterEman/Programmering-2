@@ -4,8 +4,8 @@ public class MapSolver {
 
 	public MapSolver(Map map) {
 	
-		int x = map.getStartX();
-		int y = map.getStartY();
+		int x = map.startX();
+		int y = map.startY();
 		
 		solve(x, y, 1); // 1 = right
 		solve(x, y, 2); // 2 = up
@@ -13,6 +13,8 @@ public class MapSolver {
 		solve(x, y, 4); // 4 = down	
 	}
 	
-	
+	public static void solve(int x, int y, int dir) {
+		
+	}
 	
 }
