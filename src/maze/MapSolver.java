@@ -14,7 +14,8 @@ public class MapSolver {
 	}
 	
 	public static void solve(int x, int y, int dir) {
+	
+		//*insert* kod som löser maze:en lmaos
 		
 	}
-	
 }
