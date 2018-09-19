@@ -29,7 +29,7 @@ public class MapInterpreter {
 					else if (c == 'G') {
 						b = new GoalBlock();
 					}
-					else { // if (c == ' ')
+					else {
 						b = new OpenBlock();
 					}
 
@@ -46,7 +46,5 @@ public class MapInterpreter {
 		}
 
 		return m;
-
 	}
-
 }

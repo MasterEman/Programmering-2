@@ -22,5 +22,4 @@ public class maze extends Application{
 	public static void main(String[] args) {
 		launch();
 	}
-
 }

@@ -17,7 +17,7 @@ public class Map extends Group{
 			map.get(y).add(b);
 		}
 		
-		if(b instanceof StartBlock){
+		if (b instanceof StartBlock){
 			startX = map.get(y).size()-1;
 			startY = y;
 		}
