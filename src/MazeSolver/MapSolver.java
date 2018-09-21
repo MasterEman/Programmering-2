@@ -1,4 +1,4 @@
-package maze;
+package MazeSolver;
 
 /*import blocks.Block;
 
@@ -9,11 +9,8 @@ package maze;
 		}
 		
 		public void update() {
-			
-			
-			
+				
 		}
-		
 	}*/
 
 public class MapSolver {

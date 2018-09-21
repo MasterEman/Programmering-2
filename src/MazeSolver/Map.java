@@ -1,4 +1,4 @@
-package maze;
+package MazeSolver;
 import java.util.ArrayList;
 
 import javafx.scene.Group;

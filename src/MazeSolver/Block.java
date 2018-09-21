@@ -1,4 +1,4 @@
-package maze;
+package MazeSolver;
 import javafx.scene.Group;
 
 public class Block extends Group{

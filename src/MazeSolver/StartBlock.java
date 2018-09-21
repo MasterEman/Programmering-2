@@ -1,13 +1,13 @@
-package maze;
+package MazeSolver;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 
-public class GoalBlock extends Block {
-
-	public GoalBlock(){
+public class StartBlock extends Block {
+	
+	public StartBlock(){
 		Rectangle bg = new Rectangle(Block.SIZE,Block.SIZE);
-		bg.setFill(Color.RED);
+		bg.setFill(Color.GREEN);
 		this.getChildren().add(bg);
 	}
-	
+
 }
