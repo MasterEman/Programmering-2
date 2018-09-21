@@ -1,5 +1,21 @@
 package maze;
 
+/*import blocks.Block;
+
+	public class MapSolver extends Block {
+
+		MapSolver(int startX, int startY){
+			
+		}
+		
+		public void update() {
+			
+			
+			
+		}
+		
+	}*/
+
 public class MapSolver {
 
 	public MapSolver(Map map) {
@@ -15,7 +31,7 @@ public class MapSolver {
 	
 	public static void solve(int x, int y, int dir) {
 	
-		//*insert* kod som löser maze:en lmaos
+		//*insert* kod som löser maze:en lmao
 		
 	}
 }
