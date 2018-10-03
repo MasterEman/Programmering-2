@@ -36,7 +36,7 @@ import javafx.scene.shape.Circle;
 					solution = true;
 				}
 				
-				Circle cir = new Circle(Block.SIZE/2,Block.SIZE/2,Block.SIZE/3,Color.YELLOW);
+				Circle cir = new Circle(Block.SIZE/2,Block.SIZE/2,Block.SIZE/3,Color.GREEN);
 				
 				b.getChildren().add(cir);
 				
