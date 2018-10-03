@@ -12,7 +12,7 @@ import javafx.scene.shape.Circle;
 		//private int steps = 0;
 		private boolean solution = false;
 	
-		public MapSolver(Map map ){
+		public MapSolver(Map map) {
 			this.map = map;
 			
 			
@@ -25,11 +25,11 @@ import javafx.scene.shape.Circle;
 			solve (x, y, 4); //down
 			}
 		
-			public void solve(int x, int y, int dir){
+			public void solve(int x, int y, int dir) {
 	
 				
 				Block b = map.getBlock(x,y);
-				if (b == null || b instanceof FullBlock){
+				if (b == null || b instanceof FullBlock) {
 					return;
 				}
 				if (b instanceof GoalBlock) {
@@ -40,12 +40,12 @@ import javafx.scene.shape.Circle;
 				
 				b.getChildren().add(cir);
 				
-				if (solution == true){
+				if (solution == true) {
 					return;
 				}
 				
 				
-				if (dir == 1){ //right
+				if (dir == 1) { //right
 					
 					solve (x+1, y, 1); 
 					solve (x+1, y, 2); 
@@ -53,7 +53,7 @@ import javafx.scene.shape.Circle;
 					solve (x+1, y, 4); 
 				}
 				
-				if (dir == 2){ //up
+				if (dir == 2) { //up
 					
 					solve (x, y-1, 1); 
 					solve (x, y-1, 2); 
@@ -61,7 +61,7 @@ import javafx.scene.shape.Circle;
 					//solve (x+1, y, 4); 
 				}
 				
-				if (dir == 3){ //left
+				if (dir == 3) { //left
 					
 					//solve (x+1, y, 1); 
 					solve (x-1, y, 2); 
@@ -69,7 +69,7 @@ import javafx.scene.shape.Circle;
 					solve (x-1, y, 4); 
 				}
 				
-				if(dir == 4){ //down
+				if(dir == 4) { //down
 					
 					solve (x, y+1, 1); 
 					//solve (x, y+1, 2); 
@@ -77,7 +77,7 @@ import javafx.scene.shape.Circle;
 					solve (x, y+1, 4); 
 				}
 				
-				if (!solution){
+				if (!solution) {
 					b.getChildren().remove(cir);
 				}		
 			}				
