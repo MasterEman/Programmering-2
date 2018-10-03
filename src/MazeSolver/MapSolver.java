@@ -1,5 +1,7 @@
 package MazeSolver;
 
+import java.util.ArrayList;
+
 import MazeSolver.Block;
 import MazeSolver.FullBlock;
 import MazeSolver.GoalBlock;
@@ -9,12 +11,11 @@ import javafx.scene.shape.Circle;
 	public class MapSolver {
 		
 		private Map map;
-		//private int steps = 0;
+		public ArrayList<Block> path = new ArrayList<Block>();
 		private boolean solution = false;
 	
 		public MapSolver(Map map) {
 			this.map = map;
-			
 			
 			int x = map.startX();
 			int y = map.startY();
@@ -25,8 +26,19 @@ import javafx.scene.shape.Circle;
 			solve (x, y, 4); //down
 			}
 		
+			public void showNextPath() {
+				
+				if (path.size() == 0){
+					return;
+				}
+				
+				Block b = path.get(0);
+				Circle cir = new Circle(Block.SIZE/2,Block.SIZE/2,Block.SIZE/3,Color.GREEN);
+				b.getChildren().add(cir);
+				path.remove(0);
+			}
+		
 			public void solve(int x, int y, int dir) {
-	
 				
 				Block b = map.getBlock(x,y);
 				if (b == null || b instanceof FullBlock) {
@@ -36,14 +48,11 @@ import javafx.scene.shape.Circle;
 					solution = true;
 				}
 				
-				Circle cir = new Circle(Block.SIZE/2,Block.SIZE/2,Block.SIZE/3,Color.GREEN);
-				
-				b.getChildren().add(cir);
+				path.add(b);
 				
 				if (solution == true) {
 					return;
 				}
-				
 				
 				if (dir == 1) { //right
 					
@@ -76,9 +85,5 @@ import javafx.scene.shape.Circle;
 					solve (x, y+1, 3); 
 					solve (x, y+1, 4); 
 				}
-				
-				if (!solution) {
-					b.getChildren().remove(cir);
-				}		
 			}				
 		}

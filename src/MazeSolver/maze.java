@@ -1,6 +1,7 @@
 package MazeSolver;
-import java.io.File;
 
+import java.io.File;
+import javafx.animation.AnimationTimer;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
@@ -13,7 +14,22 @@ public class maze extends Application {
 
 		Map map = MapInterpreter.interpretMap(new File("src/mazesolver/map.txt"));
 		Scene scene = new Scene(map,map.getWidth(),map.getHeight());
-		new MapSolver (map);
+		MapSolver solver = new MapSolver (map);
+		
+		AnimationTimer AT = new AnimationTimer() {
+			
+			long before = 0;
+			
+			public void handle(long now) {
+				
+				if (now - before >= 1_000_000_000/60) {
+					solver.showNextPath();
+					before = now;
+				}
+			}
+		};
+		
+		AT.start();
 		
 		primaryStage.getIcons().add(new Image("file:icon.jpg"));
 		primaryStage.setTitle("Maze Solving AI");
