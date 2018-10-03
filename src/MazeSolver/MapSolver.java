@@ -9,7 +9,7 @@ import javafx.scene.shape.Circle;
 	public class MapSolver {
 		
 		private Map map;
-		private int steps = 0;
+		//private int steps = 0;
 		private boolean solution = false;
 	
 		public MapSolver(Map map ){
@@ -32,7 +32,7 @@ import javafx.scene.shape.Circle;
 				if (b == null || b instanceof FullBlock){
 					return;
 				}
-				if (b instanceof GoalBlock ){
+				if (b instanceof GoalBlock) {
 					solution = true;
 				}
 				
