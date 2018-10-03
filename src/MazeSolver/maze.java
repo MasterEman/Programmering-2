@@ -12,7 +12,7 @@ public class maze extends Application {
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 
-		Map map = MapInterpreter.interpretMap(new File("src/mazesolver/map.txt"));
+		Map map = MapInterpreter.interpretMap(new File("map.txt"));
 		Scene scene = new Scene(map,map.getWidth(),map.getHeight());
 		MapSolver solver = new MapSolver (map);
 		
