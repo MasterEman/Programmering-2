@@ -1,12 +1,12 @@
-package MazeSolver;
+package mazeSolver;
 
 import java.util.ArrayList;
 
-import MazeSolver.Block;
-import MazeSolver.FullBlock;
-import MazeSolver.GoalBlock;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
+import mazeSolver.Block;
+import mazeSolver.FullBlock;
+import mazeSolver.GoalBlock;
 
 	public class MapSolver {
 		

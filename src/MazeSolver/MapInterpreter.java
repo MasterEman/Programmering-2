@@ -1,4 +1,4 @@
-package MazeSolver;
+package mazeSolver;
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
