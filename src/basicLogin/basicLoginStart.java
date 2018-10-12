@@ -23,23 +23,32 @@ public class basicLoginStart extends Application {
 
 	public void start(Stage primaryStage) throws Exception {
 		
-		scene = new Scene(new Group(), 400, 400, Color.LIGHTGREY);
 		Group root = new Group();
+		scene = new Scene(root, 245, 150, Color.LIGHTGREY);
 		
 		window = primaryStage;
 		
 		VBox layout = new VBox(10);
-		layout.setPadding(new Insets(20, 20, 20, 20));
+		layout.setPadding(new Insets(10, 10, 10, 10));
 		
-		TextField userInput = new TextField();
-		TextField passInput = new TextField();
+		TextField userInput = new TextField("Username...");
+		TextField passInput = new TextField("Password...");
 		
 		button = new Button("Submit");
-		button.setOnAction( e -> System.out.println("Username: " + userInput.getText() + " " + "Password: " + passInput.getText()));
+		button.setOnAction( e -> System.out.println("------------------------------------------" 
+																						+ "\n"
+																						+ "Username: " + userInput.getText() 
+																						+ "\n" 
+																						+ "Password: " + passInput.getText()
+																						+ "\n"
+																						+"------------------------------------------"));
 		
 		root.getChildren().addAll(userInput);
-		root.getChildren().addAll(passInput);
-		root.getChildren().addAll(button);
+        root.getChildren().addAll(passInput);
+        root.getChildren().addAll(button);
+        userInput.relocate(55, 10);
+        passInput.relocate(55, 50);
+        button.relocate(100, 90);
 		
 		window.getIcons().add(new Image("file:icon.jpg"));
 		window.setResizable(false);
