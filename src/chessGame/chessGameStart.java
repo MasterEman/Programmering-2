@@ -13,6 +13,9 @@ public class chessGameStart extends Application {
 		Group root = new Group();
 		
 		Scene scene = new Scene(root, square.SIZE  * 8, square.SIZE  * 8);
+		
+		chessBoard board = new chessBoard();
+		root.getChildren().addAll(chessBoard);
 						
 		primaryStage.getIcons().add(new Image("file:icon.jpg"));
 		primaryStage.setTitle("Chess Game");
