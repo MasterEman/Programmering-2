@@ -13,8 +13,8 @@ public class chessGameStart extends Application {
 
 		Group root = new Group();
 
-		chessBoard cb = new chessBoard();
-		root.getChildren().addAll(cb);
+//		chessBoard cb = new chessBoard();
+//		root.getChildren().addAll(cb);
 
 		Scene scene = new Scene(root, square.SIZE * 8, square.SIZE * 8);
 
