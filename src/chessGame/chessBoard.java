@@ -1,23 +1,41 @@
 package chessGame;
 
-public class chessBoard {
+import javafx.scene.Group;
+
+public class chessBoard  extends Group{
 	
 	public chessBoard() {
 		
-		for (int i = 1; i < 8; i++) {
-			for (int j = 1; j < 8; j++) {
+		boolean alternate = false;
+		
+		for (int i = 0; i < 8; i++) {
+			for (int j = 0; j < 8; j++) {
 				
-				whiteSquare ws;
-				blackSquare bs;
+				if (alternate) {
+					this.getChildren().add(new blackSquare());
+					alternate = false;
+					
+				}
+				else{
+					
+					this.getChildren().add(new whiteSquare());
+					alternate = true;
+				}
 				
-				ws = new whiteSquare();
-				ws.setTranslateX(j);
-				ws.setTranslateY(i);
-				
-				bs = new blackSquare();
-				bs.setTranslateX(j);
-				bs.setTranslateY(i);
+				this.getChildren().get(this.getChildren().size()-1).setTranslateX(j * square.SIZE);
+				this.getChildren().get(this.getChildren().size()-1).setTranslateY(i * square.SIZE);
+			
 			}
+			
+			if (alternate) {
+				alternate = false;
+			}
+			else{
+				
+				alternate = true;
+				
+			}
+			
 		}
 	}
 }
