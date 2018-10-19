@@ -14,7 +14,7 @@ public class chessGameStart extends Application {
 		
 		Scene scene = new Scene(cb, square.SIZE  * 8 - 10, square.SIZE  * 8 - 10);
 
-		primaryStage.getIcons().add(new Image("file:icon.jpg"));
+		primaryStage.getIcons().add(new Image("file:images/icon.jpg"));
 		primaryStage.setTitle("Chess Game");
 		primaryStage.setResizable(false);
 		primaryStage.setScene(scene);
