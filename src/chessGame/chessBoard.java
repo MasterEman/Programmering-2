@@ -2,7 +2,7 @@ package chessGame;
 
 import javafx.scene.Group;
 
-public class chessBoard  extends Group{
+public class chessBoard  extends Group {
 	
 	public chessBoard() {
 		
@@ -14,28 +14,22 @@ public class chessBoard  extends Group{
 				if (alternate) {
 					this.getChildren().add(new blackSquare());
 					alternate = false;
-					
 				}
-				else{
-					
+				else {	
 					this.getChildren().add(new whiteSquare());
 					alternate = true;
 				}
 				
 				this.getChildren().get(this.getChildren().size()-1).setTranslateX(j * square.SIZE);
 				this.getChildren().get(this.getChildren().size()-1).setTranslateY(i * square.SIZE);
-			
 			}
 			
 			if (alternate) {
 				alternate = false;
 			}
-			else{
-				
+			else {
 				alternate = true;
-				
 			}
-			
 		}
 	}
 }
