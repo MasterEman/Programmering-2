@@ -12,7 +12,7 @@ public class chessGameStart extends Application {
 
 		chessBoard cb = new chessBoard();
 		
-		Scene scene = new Scene(cb, square.SIZE * 8, square.SIZE * 8);
+		Scene scene = new Scene(cb, square.SIZE  * 8 - 10, square.SIZE  * 8 - 10);
 
 		primaryStage.getIcons().add(new Image("file:icon.jpg"));
 		primaryStage.setTitle("Chess Game");
