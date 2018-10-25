@@ -13,6 +13,13 @@ public class chessGameStart extends Application {
 		chessBoard cb = new chessBoard();
 		
 		Scene scene = new Scene(cb, square.SIZE  * 8 - 10, square.SIZE  * 8 - 10);
+		
+		playerBlack blackP = new playerBlack();
+		blackP.setTranslateY(600);
+		playerWhite whiteP = new playerWhite();
+		
+		cb.getChildren().add(blackP);
+		cb.getChildren().add(whiteP);
 
 		primaryStage.getIcons().add(new Image("file:images/chessPieces/tile001.png"));
 		primaryStage.setTitle("Chess Game");

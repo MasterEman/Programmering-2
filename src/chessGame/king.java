@@ -8,8 +8,8 @@ public class king extends piece {
 	static Image White = new Image("file:images/chessPieces/tile001.png");
 	static Image Black = new Image("file:images/chessPieces/tile007.png");
 	
-	public king (String color) {
-			super (White, Black, color);		
+	public king(String color) {
+			super(White, Black, color);		
 	}
 
 	@Override

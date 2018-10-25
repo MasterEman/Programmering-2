@@ -8,7 +8,7 @@ public abstract class piece extends Group{
 
 	public String color;
 	
-	public piece (Image imageWhite, Image imageBlack, String color){
+	public piece(Image imageWhite, Image imageBlack, String color){
 		
 		this.color = color;
 		

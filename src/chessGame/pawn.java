@@ -7,8 +7,8 @@ public class pawn extends piece {
 	static Image White = new Image("file:images/chessPieces/tile006.png");
 	static Image Black = new Image("file:images/chessPieces/tile012.png");
 
-	public pawn (String color) {
-		super (White, Black, color);
+	public pawn(String color) {
+		super(White, Black, color);
 	}
 
 	@Override
