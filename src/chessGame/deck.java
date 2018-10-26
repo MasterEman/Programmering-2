@@ -9,7 +9,6 @@ public abstract class deck extends Group{
 	
 	public deck(String color) {
 		
-		
 		if (color.equals("Black")) {
 			Pawns(color);
 			SecRow(color);

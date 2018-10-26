@@ -20,7 +20,7 @@ public class chessGameStart extends Application {
 		
 		cb.getChildren().add(blackP);
 		cb.getChildren().add(whiteP);
-
+		
 		primaryStage.getIcons().add(new Image("file:images/chessPieces/tile001.png"));
 		primaryStage.setTitle("Chess Game");
 		primaryStage.setResizable(false);
