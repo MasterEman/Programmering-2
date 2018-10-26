@@ -8,7 +8,7 @@ public class blackSquare extends Group {
 	
 	public blackSquare() {
 		Rectangle bg = new Rectangle(square.SIZE, square.SIZE);
-		bg.setFill(Color.BLACK);
+		bg.setFill(Color.DIMGREY);
 		this.getChildren().add(bg);
 	}
 }
