@@ -22,10 +22,8 @@ public abstract class deck extends Group{
 		
 		for (int i = 0; i < 2; i++) {
 			for (int j = 0 ; j < 8 ; j++) {
-				
 				pieces.get(i * 8 + j).setTranslateX((j) * 100);
 				pieces.get(i * 8 + j).setTranslateY((i) * 100);
-				
 			}
 		}
 		
