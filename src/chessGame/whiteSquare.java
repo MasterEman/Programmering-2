@@ -13,7 +13,7 @@ public class whiteSquare extends Group {
 		bg.setFill(Color.TRANSPARENT);
 		this.getChildren().add(bg);
 		
-		setOnMouseEntered(new EventHandler<MouseEvent>() {
+/*		setOnMouseEntered(new EventHandler<MouseEvent>() {
             @Override
             public void handle(MouseEvent t) {
                 bg.setFill(Color.GREEN);
@@ -25,6 +25,6 @@ public class whiteSquare extends Group {
             public void handle(MouseEvent t) {
                 bg.setFill(Color.WHITE);
             }
-        });
+        });  */
 	}	
 }

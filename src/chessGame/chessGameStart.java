@@ -16,6 +16,7 @@ public class chessGameStart extends Application {
 		
 		playerBlack blackP = new playerBlack();
 		blackP.setTranslateY(600);
+		
 		playerWhite whiteP = new playerWhite();
 		
 		cb.getChildren().add(blackP);

@@ -3,10 +3,12 @@ package chessGame;
 import javafx.scene.Group;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.paint.Color;
 
 public abstract class piece extends Group{
 
 	public String color;
+	private Color pieceColor;
 	
 	public piece(Image imageWhite, Image imageBlack, String color){
 		
@@ -26,5 +28,11 @@ public abstract class piece extends Group{
 		
 		this.getChildren().add(iw);	
 	}
+		
 	public abstract void move();
+	
+	public Color getColor() {
+		return pieceColor;
+	}
+	
 }
